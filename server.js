@@ -32,3 +32,8 @@ const app = require("./src/app");
     console.error("❌ Failed to start server", err);
   }
 })();
+
+
+app.use("/", (req, res) => {
+  res.send("Hello World! I am from server.js");
+});
