@@ -34,6 +34,6 @@ const app = require("./src/app");
 })();
 
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hello World! I am from server.js");
 });
